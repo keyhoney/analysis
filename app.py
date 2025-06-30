@@ -73,8 +73,7 @@ if uploaded_file and desired_major and university_level:
 
             # PDF에 저장할 텍스트 구성
             section_report = (
-                f"[{section} - {result.get('type')}]
-"
+                f"[{section} - {result.get('type')}]\n"
                 f"✔️ 강점:
 - " + "\n- ".join(result.get("strengths", [])) + "\n"
                 f"⚠️ 약점: {result.get('weakness', '')}\n"
